@@ -1,1252 +1,667 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-  <!-- =========================================
-       BASIC DOCUMENT SETTINGS
-  ========================================== -->
-
   <meta charset="UTF-8">
-
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <meta
     name="description"
-    content="Ben E-Bikes — Explore available electric bikes and submit an application."
+    content="Mr Ben E-Bike - Explore available electric bikes and submit an application."
   >
 
-  <meta
-    name="keywords"
-    content="electric bike, e-bike, Talaria, Yozma, Surron, Storm Bee, Ultra Bee"
-  >
+  <title>Mr Ben E-Bike | Free E-Bike Giveaway</title>
 
-  <meta
-    name="author"
-    content="Ben E-Bikes"
-  >
-
-  <meta
-    name="theme-color"
-    content="#081d13"
-  >
-
-  <title>
-    Ben E-Bikes | Electric Bike Application
-  </title>
-
-
-  <!-- =========================================
-       STYLESHEET
-  ========================================== -->
-
-  <link
-    rel="stylesheet"
-    href="style.css"
-  >
-
+  <link rel="stylesheet" href="style.css">
 </head>
-
 
 <body>
 
-
   <!-- =========================================
-       HEADER / NAVIGATION
+       NAVIGATION
   ========================================== -->
 
   <header class="navbar">
 
-    <div class="nav-container">
-
-
-      <!-- LOGO -->
-
-      <a
-        href="#home"
-        class="logo"
-        aria-label="Ben E-Bikes Home"
-      >
-
-        <span class="logo-icon">
-          ⚡
-        </span>
-
-        <span class="logo-main">
-          BEN
-        </span>
-
-        <span class="logo-sub">
-          E-BIKES
-        </span>
-
-      </a>
-
-
-      <!-- DESKTOP NAVIGATION -->
-
-      <nav
-        class="main-navigation"
-        aria-label="Main navigation"
-      >
-
-        <a href="#home">
-          Home
-        </a>
-
-        <a href="#bikes">
-          Available E-Bikes
-        </a>
-
-        <a href="#how">
-          How It Works
-        </a>
-
-        <a href="#delivery">
-          Delivery
-        </a>
-
-        <a href="#terms">
-          Terms
-        </a>
-
-        <a href="#faq">
-          FAQ
-        </a>
-
-        <a href="#contact">
-          Contact
-        </a>
-
-      </nav>
-
-
-      <!-- HEADER BUTTON -->
-
-      <a
-        href="#apply"
-        class="nav-button"
-      >
-        Apply Now
-      </a>
-
+    <div class="logo">
+      ⚡ MR BEN <span>E-BIKE</span>
     </div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#bikes">Bikes</a>
+      <a href="#how">How It Works</a>
+      <a href="#apply">Apply</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a href="#apply" class="nav-button">
+      Claim E-Bike
+    </a>
 
   </header>
 
 
-
   <!-- =========================================
-       MAIN CONTENT
+       HERO
   ========================================== -->
 
-  <main>
+  <section id="home" class="hero">
 
+    <div class="hero-content">
 
-    <!-- =========================================
-         HERO SECTION
-    ========================================== -->
-
-    <section
-      id="home"
-      class="hero"
-    >
-
-      <div class="hero-container">
-
-
-        <!-- HERO TEXT -->
-
-        <div class="hero-content">
-
-
-          <div class="badge">
-            🚲 ELECTRIC BIKE PROGRAM
-          </div>
-
-
-          <h1>
-
-            Find Your
-
-            <span>
-              Next Ride.
-            </span>
-
-          </h1>
-
-
-          <p class="hero-description">
-
-            Explore our available electric bike models
-            and submit an application for the model
-            you are interested in.
-
-          </p>
-
-
-          <!-- FREE BIKE NOTICE -->
-
-          <div class="free-notice">
-
-            <div class="notice-icon">
-              ✓
-            </div>
-
-            <div class="notice-content">
-
-              <h3>
-                The E-Bike Is Free
-              </h3>
-
-              <p>
-
-                The e-bike itself is provided at no charge.
-                An applicable delivery fee may apply
-                depending on the destination.
-
-              </p>
-
-              <p>
-
-                Delivery fees may range from
-
-                <strong>
-                  $100–$500
-                </strong>
-
-                depending on the location and delivery
-                address.
-
-              </p>
-
-              <small>
-
-                The exact delivery fee must be confirmed
-                before any payment is requested.
-
-              </small>
-
-            </div>
-
-          </div>
-
-
-          <!-- HERO BUTTONS -->
-
-          <div class="hero-buttons">
-
-            <a
-              href="#bikes"
-              class="primary-button"
-            >
-              Explore E-Bikes
-              <span>→</span>
-            </a>
-
-            <a
-              href="#apply"
-              class="secondary-button"
-            >
-              Start Application
-            </a>
-
-          </div>
-
-
-          <!-- HERO TRUST INFORMATION -->
-
-          <div class="hero-trust">
-
-            <div class="trust-item">
-
-              <span>
-                ✓
-              </span>
-
-              <p>
-                Application Form
-              </p>
-
-            </div>
-
-            <div class="trust-item">
-
-              <span>
-                ✓
-              </span>
-
-              <p>
-                Delivery Information
-              </p>
-
-            </div>
-
-            <div class="trust-item">
-
-              <span>
-                ✓
-              </span>
-
-              <p>
-                Email Submission
-              </p>
-
-            </div>
-
-          </div>
-
-
-        </div>
-
-
-        <!-- HERO IMAGE -->
-
-        <div class="hero-visual">
-
-          <div class="hero-image-wrapper">
-
-            <img
-              src="images/talaria.jpg"
-              alt="Electric bike"
-              class="hero-bike-image"
-            >
-
-          </div>
-
-
-          <!-- FLOATING HERO CARD -->
-
-          <div class="hero-floating-card">
-
-            <div class="floating-label">
-              AVAILABLE
-            </div>
-
-            <div class="floating-title">
-              E-BIKE
-            </div>
-
-            <div class="floating-free">
-              FREE
-            </div>
-
-          </div>
-
-        </div>
-
-
+      <div class="badge">
+        🚲 FREE E-BIKE GIVEAWAY
       </div>
 
-    </section>
+      <h1>
+        Your Next Ride
+        <span>Could Be Free.</span>
+      </h1>
 
+      <p>
+        Explore our available electric bikes and submit
+        an application to request your preferred bike.
+      </p>
 
+      <div class="free-box">
 
-    <!-- =========================================
-         INTRODUCTION SECTION
-    ========================================== -->
-
-    <section class="intro-section">
-
-      <div class="intro-container">
-
-        <div class="intro-item">
-
-          <span class="intro-icon">
-            ⚡
-          </span>
-
-          <div>
-
-            <h3>
-              Electric Models
-            </h3>
-
-            <p>
-              Explore multiple e-bike options.
-            </p>
-
-          </div>
-
-        </div>
-
-
-        <div class="intro-item">
-
-          <span class="intro-icon">
-            🚲
-          </span>
-
-          <div>
-
-            <h3>
-              Choose Your Model
-            </h3>
-
-            <p>
-              Select the bike you prefer.
-            </p>
-
-          </div>
-
-        </div>
-
-
-        <div class="intro-item">
-
-          <span class="intro-icon">
-            📍
-          </span>
-
-          <div>
-
-            <h3>
-              Delivery Location
-            </h3>
-
-            <p>
-              Provide your delivery address.
-            </p>
-
-          </div>
-
-        </div>
-
-
-        <div class="intro-item">
-
-          <span class="intro-icon">
-            ✉
-          </span>
-
-          <div>
-
-            <h3>
-              Email Application
-            </h3>
-
-            <p>
-              Review and send your application.
-            </p>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-
-    <!-- =========================================
-         AVAILABLE BIKES
-    ========================================== -->
-
-    <section
-      id="bikes"
-      class="section bikes-section"
-    >
-
-      <div class="section-heading">
-
-        <span class="section-label">
-          AVAILABLE MODELS
-        </span>
-
-        <h2>
-          Choose Your E-Bike
-        </h2>
+        <strong>The E-Bike Is FREE</strong>
 
         <p>
-
-          Browse the available models below.
-          Select the model you are interested in
-          to continue to the application form.
-
+          An applicable delivery fee may range from
+          <strong>$100–$500</strong>, depending on your
+          location and delivery address.
         </p>
+
+        <small>
+          The exact delivery fee will be confirmed before
+          any payment is requested.
+        </small>
 
       </div>
 
+      <a href="#apply" class="primary-button">
+        Claim Your Free E-Bike →
+      </a>
 
-      <div class="bike-grid">
-
-
-        <!-- =====================================
-             TALARIA
-        ====================================== -->
-
-        <article class="bike-card">
-
-          <div class="bike-image">
-
-            <img
-              src="images/talaria.jpg"
-              alt="Talaria E-Bike"
-              loading="lazy"
-            >
-
-            <span class="free-tag">
-              FREE
-            </span>
-
-          </div>
+    </div>
 
 
-          <div class="bike-info">
+    <!-- HERO IMAGE -->
 
-            <div class="bike-category">
-              ELECTRIC BIKE
-            </div>
+    <div class="hero-image">
+
+      <img
+        src="https://kommodo.ai/i/OSHzV7JRmZp8sFqqZs8e"
+        alt="Talaria E-Bike"
+      >
+
+      <div class="image-card">
+
+        <strong>
+          Talaria E-Bike
+        </strong>
+
+        <span>
+          FREE
+        </span>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================================
+       AVAILABLE BIKES
+  ========================================== -->
+
+  <section id="bikes" class="section">
+
+    <div class="section-heading">
+
+      <p class="section-label">
+        AVAILABLE BIKES
+      </p>
+
+      <h2>
+        Choose Your E-Bike
+      </h2>
+
+      <p>
+        Select from the available models below.
+      </p>
+
+    </div>
+
+
+    <div class="bike-grid">
+
+
+      <!-- =====================================
+           TALARIA
+      ====================================== -->
+
+      <article class="bike-card">
+
+        <img
+          src="https://kommodo.ai/i/OSHzV7JRmZp8sFqqZs8e"
+          alt="Talaria E-Bike"
+        >
+
+        <div class="bike-info">
+
+          <div class="bike-top">
 
             <h3>
               Talaria E-Bike
             </h3>
 
-            <p>
-
-              Explore the Talaria model and submit
-              an application for availability.
-
-            </p>
-
-
-            <button
-              type="button"
-              class="choose-bike"
-              data-bike="Talaria E-Bike"
-            >
-
-              Choose Talaria
-
-              <span>
-                →
-              </span>
-
-            </button>
-
-          </div>
-
-        </article>
-
-
-
-        <!-- =====================================
-             YOZMA
-        ====================================== -->
-
-        <article class="bike-card">
-
-          <div class="bike-image">
-
-            <img
-              src="images/yozma.jpg"
-              alt="Yozma E-Bike"
-              loading="lazy"
-            >
-
-            <span class="free-tag">
+            <span>
               FREE
             </span>
 
           </div>
 
+          <p>
+            Explore the Talaria electric bike and submit
+            an application to request this model.
+          </p>
 
-          <div class="bike-info">
+          <a
+            href="#apply"
+            class="card-button"
+            data-bike="Talaria E-Bike"
+          >
+            Apply for Talaria
+          </a>
 
-            <div class="bike-category">
-              ELECTRIC BIKE
-            </div>
+        </div>
+
+      </article>
+
+
+      <!-- =====================================
+           YOZMA
+      ====================================== -->
+
+      <article class="bike-card">
+
+        <img
+          src="https://kommodo.ai/i/LvL7cCjscLf9fwFEBba8"
+          alt="Yozma E-Bike"
+        >
+
+        <div class="bike-info">
+
+          <div class="bike-top">
 
             <h3>
               Yozma E-Bike
             </h3>
 
-            <p>
-
-              Explore the Yozma model and submit
-              an application for availability.
-
-            </p>
-
-
-            <button
-              type="button"
-              class="choose-bike"
-              data-bike="Yozma E-Bike"
-            >
-
-              Choose Yozma
-
-              <span>
-                →
-              </span>
-
-            </button>
-
-          </div>
-
-        </article>
-
-
-
-        <!-- =====================================
-             SURRON
-        ====================================== -->
-
-        <article class="bike-card">
-
-          <div class="bike-image">
-
-            <img
-              src="images/surron.jpg"
-              alt="Surron E-Bike"
-              loading="lazy"
-            >
-
-            <span class="free-tag">
+            <span>
               FREE
             </span>
 
           </div>
 
+          <p>
+            Explore the Yozma electric bike and submit
+            an application to request this model.
+          </p>
 
-          <div class="bike-info">
+          <a
+            href="#apply"
+            class="card-button"
+            data-bike="Yozma E-Bike"
+          >
+            Apply for Yozma
+          </a>
 
-            <div class="bike-category">
-              ELECTRIC BIKE
-            </div>
+        </div>
+
+      </article>
+
+
+      <!-- =====================================
+           SURRON
+      ====================================== -->
+
+      <article class="bike-card">
+
+        <img
+          src="https://kommodo.ai/i/Moehpi8GeQCofS1hteTy"
+          alt="Surron E-Bike"
+        >
+
+        <div class="bike-info">
+
+          <div class="bike-top">
 
             <h3>
               Surron E-Bike
             </h3>
 
-            <p>
-
-              Explore the Surron model and submit
-              an application for availability.
-
-            </p>
-
-
-            <button
-              type="button"
-              class="choose-bike"
-              data-bike="Surron E-Bike"
-            >
-
-              Choose Surron
-
-              <span>
-                →
-              </span>
-
-            </button>
-
-          </div>
-
-        </article>
-
-
-
-        <!-- =====================================
-             STORM BEE
-        ====================================== -->
-
-        <article class="bike-card">
-
-          <div class="bike-image">
-
-            <img
-              src="images/stormbee.jpg"
-              alt="Storm Bee E-Bike"
-              loading="lazy"
-            >
-
-            <span class="free-tag">
+            <span>
               FREE
             </span>
 
           </div>
 
+          <p>
+            Explore the Surron electric bike and submit
+            an application to request this model.
+          </p>
 
-          <div class="bike-info">
+          <a
+            href="#apply"
+            class="card-button"
+            data-bike="Surron E-Bike"
+          >
+            Apply for Surron
+          </a>
 
-            <div class="bike-category">
-              ELECTRIC BIKE
-            </div>
+        </div>
+
+      </article>
+
+
+      <!-- =====================================
+           STORM BEE
+      ====================================== -->
+
+      <article class="bike-card">
+
+        <img
+          src="https://kommodo.ai/i/KJ03DQbH7YS2uatkpKyY"
+          alt="Storm Bee E-Bike"
+        >
+
+        <div class="bike-info">
+
+          <div class="bike-top">
 
             <h3>
               Storm Bee E-Bike
             </h3>
 
-            <p>
-
-              Explore the Storm Bee model and submit
-              an application for availability.
-
-            </p>
-
-
-            <button
-              type="button"
-              class="choose-bike"
-              data-bike="Storm Bee E-Bike"
-            >
-
-              Choose Storm Bee
-
-              <span>
-                →
-              </span>
-
-            </button>
-
-          </div>
-
-        </article>
-
-
-
-        <!-- =====================================
-             ULTRA BEE
-        ====================================== -->
-
-        <article class="bike-card">
-
-          <div class="bike-image">
-
-            <img
-              src="images/ultrabee.jpg"
-              alt="Ultra Bee E-Bike"
-              loading="lazy"
-            >
-
-            <span class="free-tag">
+            <span>
               FREE
             </span>
 
           </div>
 
+          <p>
+            Explore the Storm Bee electric bike and submit
+            an application to request this model.
+          </p>
 
-          <div class="bike-info">
+          <a
+            href="#apply"
+            class="card-button"
+            data-bike="Storm Bee E-Bike"
+          >
+            Apply for Storm Bee
+          </a>
 
-            <div class="bike-category">
-              ELECTRIC BIKE
-            </div>
+        </div>
+
+      </article>
+
+
+      <!-- =====================================
+           ULTRA BEE
+           
+           No fifth image was provided.
+           This card is kept available for the
+           Ultra Bee image when you provide it.
+      ====================================== -->
+
+      <article class="bike-card">
+
+        <div class="bike-image-placeholder">
+
+          <span>
+            ULTRA BEE
+          </span>
+
+        </div>
+
+        <div class="bike-info">
+
+          <div class="bike-top">
 
             <h3>
               Ultra Bee E-Bike
             </h3>
 
-            <p>
-
-              Explore the Ultra Bee model and submit
-              an application for availability.
-
-            </p>
-
-
-            <button
-              type="button"
-              class="choose-bike"
-              data-bike="Ultra Bee E-Bike"
-            >
-
-              Choose Ultra Bee
-
-              <span>
-                →
-              </span>
-
-            </button>
+            <span>
+              FREE
+            </span>
 
           </div>
 
-        </article>
+          <p>
+            Explore the Ultra Bee electric bike and submit
+            an application to request this model.
+          </p>
+
+          <a
+            href="#apply"
+            class="card-button"
+            data-bike="Ultra Bee E-Bike"
+          >
+            Apply for Ultra Bee
+          </a>
+
+        </div>
+
+      </article>
 
 
-      </div>
+    </div>
 
-    </section>
+  </section>
 
 
+  <!-- =========================================
+       HOW IT WORKS
+  ========================================== -->
 
-    <!-- =========================================
-         HOW IT WORKS
-    ========================================== -->
+  <section id="how" class="how-section">
 
-    <section
-      id="how"
-      class="how-section"
-    >
+    <div class="section-heading">
 
-      <div class="section-heading">
+      <p class="section-label">
+        SIMPLE PROCESS
+      </p>
 
-        <span class="section-label">
-          SIMPLE PROCESS
-        </span>
+      <h2>
+        How It Works
+      </h2>
 
-        <h2>
-          How It Works
-        </h2>
+    </div>
+
+
+    <div class="steps">
+
+
+      <div class="step">
+
+        <div class="step-number">
+          01
+        </div>
+
+        <h3>
+          Choose a Bike
+        </h3>
 
         <p>
-
-          Follow the steps below to submit
-          your application.
-
+          Select an available e-bike that you would like
+          to request.
         </p>
 
       </div>
 
 
-      <div class="steps">
+      <div class="step">
 
-
-        <div class="step">
-
-          <div class="step-number">
-            01
-          </div>
-
-          <div class="step-icon">
-            🚲
-          </div>
-
-          <h3>
-            Choose Your Bike
-          </h3>
-
-          <p>
-
-            Browse the available models and select
-            the e-bike you are interested in.
-
-          </p>
-
+        <div class="step-number">
+          02
         </div>
 
+        <h3>
+          Complete Application
+        </h3>
 
-        <div class="step">
-
-          <div class="step-number">
-            02
-          </div>
-
-          <div class="step-icon">
-            📝
-          </div>
-
-          <h3>
-            Complete the Form
-          </h3>
-
-          <p>
-
-            Provide your name, contact details,
-            location and delivery address.
-
-          </p>
-
-        </div>
-
-
-        <div class="step">
-
-          <div class="step-number">
-            03
-          </div>
-
-          <div class="step-icon">
-            ✉
-          </div>
-
-          <h3>
-            Review & Send
-          </h3>
-
-          <p>
-
-            Your email application will be prepared.
-            Review the details and send it.
-
-          </p>
-
-        </div>
-
-
-        <div class="step">
-
-          <div class="step-number">
-            04
-          </div>
-
-          <div class="step-icon">
-            📍
-          </div>
-
-          <h3>
-            Delivery Confirmation
-          </h3>
-
-          <p>
-
-            The delivery location is reviewed and
-            applicable delivery information is confirmed.
-
-          </p>
-
-        </div>
-
+        <p>
+          Provide your contact and delivery information
+          through the application form.
+        </p>
 
       </div>
 
-    </section>
 
+      <div class="step">
 
-
-    <!-- =========================================
-         DELIVERY INFORMATION
-    ========================================== -->
-
-    <section
-      id="delivery"
-      class="delivery-section"
-    >
-
-      <div class="delivery-container">
-
-
-        <div class="delivery-content">
-
-          <span class="section-label">
-            DELIVERY INFORMATION
-          </span>
-
-          <h2>
-            Understanding Delivery
-          </h2>
-
-          <p>
-
-            The e-bike itself is stated as free.
-            Depending on the destination, an applicable
-            delivery fee may be required.
-
-          </p>
-
-          <p>
-
-            Delivery fees may range from
-
-            <strong>
-              $100 to $500
-            </strong>
-
-            based on the location and delivery address.
-
-          </p>
-
-          <p>
-
-            The exact delivery amount should be
-            confirmed before any payment is requested.
-
-          </p>
-
+        <div class="step-number">
+          03
         </div>
 
+        <h3>
+          Confirm Delivery
+        </h3>
 
-        <div class="delivery-box">
-
-          <div class="delivery-box-icon">
-            📦
-          </div>
-
-          <h3>
-            Delivery Fee Range
-          </h3>
-
-          <div class="delivery-price">
-            $100 – $500
-          </div>
-
-          <p>
-
-            Final delivery charges depend on the
-            destination and address.
-
-          </p>
-
-        </div>
-
+        <p>
+          Your location will be reviewed and the
+          applicable delivery fee will be confirmed.
+        </p>
 
       </div>
 
-    </section>
+
+    </div>
+
+  </section>
 
 
+  <!-- =========================================
+       APPLICATION
+  ========================================== -->
 
-    <!-- =========================================
-         APPLICATION FORM
-    ========================================== -->
+  <section id="apply" class="application-section">
 
-    <section
-      id="apply"
-      class="application-section"
-    >
+    <div class="form-wrapper">
 
-      <div class="form-container">
+      <div class="section-heading left">
 
+        <p class="section-label">
+          APPLICATION
+        </p>
 
-        <div class="section-heading left">
+        <h2>
+          Request Your Free E-Bike
+        </h2>
 
-          <span class="section-label">
-            APPLICATION
-          </span>
+        <p>
+          Complete the form below with accurate delivery
+          information.
+        </p>
 
-          <h2>
-            Apply for an E-Bike
-          </h2>
-
-          <p>
-
-            Complete the form below. When you submit,
-            your email application will be prepared for
-            you to review and send.
-
-          </p>
-
-        </div>
+      </div>
 
 
-        <!-- FORM NOTICE -->
+      <!-- IMPORTANT NOTICE -->
 
-        <div class="important-box">
+      <div class="important-notice">
 
-          <div class="important-box-title">
-            Before You Apply
-          </div>
+        <strong>
+          Important Information
+        </strong>
 
-          <p>
+        <p>
+          The e-bike itself is provided free of charge.
+          Delivery fees may range from
+          <strong>$100–$500</strong>
+          depending on the delivery location and address.
+        </p>
 
-            Please make sure that your name,
-            phone number, email and delivery address
-            are accurate.
+        <p>
+          The exact delivery fee will be confirmed before
+          any payment is requested.
+        </p>
 
-          </p>
-
-          <p>
-
-            The e-bike itself is stated as free.
-            Applicable delivery fees may range from
-            $100–$500 depending on the destination.
-
-          </p>
-
-          <p>
-
-            The exact delivery fee should be confirmed
-            before any payment is requested.
-
-          </p>
-
-        </div>
+      </div>
 
 
-        <!-- FORM -->
+      <!-- FORM -->
 
-        <form
-          id="bikeForm"
-          class="application-form"
-        >
+      <form id="bikeForm">
 
 
-          <!-- FULL NAME -->
+        <!-- NAME + PHONE -->
+
+        <div class="form-row">
 
           <div class="form-group">
 
-            <label for="fullName">
-              Full Name
-              <span>*</span>
+            <label for="name">
+              Full Name *
             </label>
 
             <input
               type="text"
-              id="fullName"
-              name="fullName"
-              placeholder="Enter your full name"
-              autocomplete="name"
+              id="name"
+              name="name"
+              placeholder="Your full name"
               required
             >
 
           </div>
 
 
-          <!-- CONTACT ROW -->
+          <div class="form-group">
 
-          <div class="form-row">
+            <label for="phone">
+              Phone Number *
+            </label>
 
-
-            <div class="form-group">
-
-              <label for="phone">
-                Phone Number
-                <span>*</span>
-              </label>
-
-              <input
-                type="tel"
-                id="phone"
-                name="phone"
-                placeholder="Enter your phone number"
-                autocomplete="tel"
-                required
-              >
-
-            </div>
-
-
-            <div class="form-group">
-
-              <label for="email">
-                Email Address
-                <span>*</span>
-              </label>
-
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Enter your email address"
-                autocomplete="email"
-                required
-              >
-
-            </div>
-
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Your phone number"
+              required
+            >
 
           </div>
 
-
-          <!-- LOCATION ROW -->
-
-          <div class="form-row">
+        </div>
 
 
-            <div class="form-group">
+        <!-- EMAIL + COUNTRY -->
 
-              <label for="country">
-                Country
-                <span>*</span>
-              </label>
-
-              <input
-                type="text"
-                id="country"
-                name="country"
-                placeholder="Enter your country"
-                autocomplete="country-name"
-                required
-              >
-
-            </div>
-
-
-            <div class="form-group">
-
-              <label for="state">
-                State / Region
-              </label>
-
-              <input
-                type="text"
-                id="state"
-                name="state"
-                placeholder="State or region"
-              >
-
-            </div>
-
-
-          </div>
-
-
-          <!-- CITY / POSTAL -->
-
-          <div class="form-row">
-
-
-            <div class="form-group">
-
-              <label for="city">
-                City
-                <span>*</span>
-              </label>
-
-              <input
-                type="text"
-                id="city"
-                name="city"
-                placeholder="Enter your city"
-                autocomplete="address-level2"
-                required
-              >
-
-            </div>
-
-
-            <div class="form-group">
-
-              <label for="postal">
-                Postal / ZIP Code
-              </label>
-
-              <input
-                type="text"
-                id="postal"
-                name="postal"
-                placeholder="Postal or ZIP code"
-                autocomplete="postal-code"
-              >
-
-            </div>
-
-
-          </div>
-
-
-          <!-- ADDRESS -->
+        <div class="form-row">
 
           <div class="form-group">
 
-            <label for="address">
-              Full Delivery Address
-              <span>*</span>
+            <label for="email">
+              Email Address *
             </label>
 
-            <textarea
-              id="address"
-              name="address"
-              placeholder="Enter your complete delivery address"
-              autocomplete="street-address"
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="you@example.com"
               required
-            ></textarea>
+            >
 
           </div>
 
 
-          <!-- BIKE SELECT -->
+          <div class="form-group">
+
+            <label for="country">
+              Country *
+            </label>
+
+            <input
+              type="text"
+              id="country"
+              name="country"
+              placeholder="Your country"
+              required
+            >
+
+          </div>
+
+        </div>
+
+
+        <!-- STATE + CITY -->
+
+        <div class="form-row">
+
+          <div class="form-group">
+
+            <label for="state">
+              State / Region
+            </label>
+
+            <input
+              type="text"
+              id="state"
+              name="state"
+              placeholder="State or region"
+            >
+
+          </div>
+
+
+          <div class="form-group">
+
+            <label for="city">
+              City *
+            </label>
+
+            <input
+              type="text"
+              id="city"
+              name="city"
+              placeholder="Your city"
+              required
+            >
+
+          </div>
+
+        </div>
+
+
+        <!-- ADDRESS -->
+
+        <div class="form-group">
+
+          <label for="address">
+            Full Delivery Address *
+          </label>
+
+          <textarea
+            id="address"
+            name="address"
+            placeholder="Enter your complete delivery address"
+            required
+          ></textarea>
+
+        </div>
+
+
+        <!-- POSTAL + BIKE -->
+
+        <div class="form-row">
+
+          <div class="form-group">
+
+            <label for="postal">
+              Postal / ZIP Code
+            </label>
+
+            <input
+              type="text"
+              id="postal"
+              name="postal"
+              placeholder="Postal code"
+            >
+
+          </div>
+
 
           <div class="form-group">
 
             <label for="bike">
-              Select E-Bike
-              <span>*</span>
+              Select E-Bike *
             </label>
 
             <select
@@ -1256,7 +671,7 @@
             >
 
               <option value="">
-                Select an e-bike
+                Choose a bike
               </option>
 
               <option value="Talaria E-Bike">
@@ -1283,474 +698,122 @@
 
           </div>
 
-
-          <!-- ADDITIONAL INFORMATION -->
-
-          <div class="form-group">
-
-            <label for="notes">
-              Additional Delivery Information
-            </label>
-
-            <textarea
-              id="notes"
-              name="notes"
-              placeholder="Add any additional information that may help with delivery."
-            ></textarea>
-
-          </div>
+        </div>
 
 
-          <!-- AGREEMENT -->
+        <!-- ADDITIONAL INFORMATION -->
 
-          <div class="agreement-wrapper">
+        <div class="form-group">
 
-            <label class="agreement">
+          <label for="notes">
+            Additional Delivery Information
+          </label>
 
-              <input
-                type="checkbox"
-                id="agreement"
-                name="agreement"
-                required
-              >
+          <textarea
+            id="notes"
+            name="notes"
+            placeholder="Any additional information about your delivery..."
+          ></textarea>
 
-              <span>
-
-                I confirm that the information I provide
-                is accurate. I understand that the e-bike
-                is stated as free and that an applicable
-                delivery fee may apply depending on the
-                destination. I understand that the exact
-                delivery fee should be confirmed before
-                any payment is requested.
-
-              </span>
-
-            </label>
-
-          </div>
+        </div>
 
 
-          <!-- SUBMIT -->
+        <!-- AGREEMENT -->
 
-          <button
-            type="submit"
-            class="submit-button"
+        <label class="checkbox">
+
+          <input
+            type="checkbox"
+            id="agreement"
+            required
           >
-
-            Continue to Email
-
-            <span>
-              →
-            </span>
-
-          </button>
-
-
-          <!-- FORM MESSAGE -->
-
-          <div
-            id="formMessage"
-            class="form-message"
-            role="status"
-            aria-live="polite"
-          ></div>
-
-
-        </form>
-
-
-        <!-- EMAIL DESTINATION -->
-
-        <div class="email-destination">
 
           <span>
-            Application destination:
+
+            I understand that the e-bike is free and that
+            an applicable delivery fee may apply depending
+            on my location. I understand that the exact
+            delivery fee will be confirmed before payment.
+
           </span>
 
-          <strong>
-            benebikes090@gmail.com
-          </strong>
-
-        </div>
+        </label>
 
 
-      </div>
+        <!-- SUBMIT -->
 
-    </section>
-
-
-
-    <!-- =========================================
-         TERMS & CONDITIONS
-    ========================================== -->
-
-    <section
-      id="terms"
-      class="terms-section"
-    >
-
-      <div class="section-heading">
-
-        <span class="section-label">
-          IMPORTANT INFORMATION
-        </span>
-
-        <h2>
-          Terms & Conditions
-        </h2>
-
-      </div>
+        <button
+          type="submit"
+          class="submit-button"
+        >
+          Submit Application →
+        </button>
 
 
-      <div class="terms-grid">
+        <!-- FORM MESSAGE -->
+
+        <div
+          id="formMessage"
+          class="form-message"
+          aria-live="polite"
+        ></div>
 
 
-        <div class="term-card">
+      </form>
 
-          <div class="term-number">
-            01
-          </div>
+    </div>
 
-          <h3>
-            Application
-          </h3>
-
-          <p>
-
-            Applicants should provide accurate contact
-            and delivery information when completing
-            the application.
-
-          </p>
-
-        </div>
+  </section>
 
 
-        <div class="term-card">
+  <!-- =========================================
+       CONTACT
+  ========================================== -->
 
-          <div class="term-number">
-            02
-          </div>
+  <section id="contact" class="contact-section">
 
-          <h3>
-            Bike Availability
-          </h3>
+    <div class="contact-content">
 
-          <p>
+      <p class="section-label">
+        CONTACT
+      </p>
 
-            Submission of an application does not by
-            itself guarantee availability or delivery
-            of a specific model.
+      <h2>
+        Need More Information?
+      </h2>
 
-          </p>
-
-        </div>
-
-
-        <div class="term-card">
-
-          <div class="term-number">
-            03
-          </div>
-
-          <h3>
-            Delivery
-          </h3>
-
-          <p>
-
-            Applicable delivery fees depend on the
-            destination and delivery address.
-
-          </p>
-
-        </div>
+      <p>
+        Contact us through the available channels
+        for questions about the e-bike program.
+      </p>
 
 
-        <div class="term-card">
-
-          <div class="term-number">
-            04
-          </div>
-
-          <h3>
-            Delivery Fee
-          </h3>
-
-          <p>
-
-            The stated delivery range is $100–$500.
-            The exact amount should be confirmed before
-            payment.
-
-          </p>
-
-        </div>
+      <div class="contact-buttons">
 
 
-        <div class="term-card">
-
-          <div class="term-number">
-            05
-          </div>
-
-          <h3>
-            Email Submission
-          </h3>
-
-          <p>
-
-            The application form prepares an email for
-            the applicant to review. The applicant must
-            manually send the email.
-
-          </p>
-
-        </div>
+        <a
+          href="mailto:benebikes090@gmail.com"
+          class="contact-button"
+        >
+          📧 Email Us
+        </a>
 
 
-        <div class="term-card">
-
-          <div class="term-number">
-            06
-          </div>
-
-          <h3>
-            Verification
-          </h3>
-
-          <p>
-
-            Applicants should verify all details before
-            sending their application.
-
-          </p>
-
-        </div>
+        <a
+          href="https://t.me/mrbenebike"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="contact-button"
+        >
+          ✈️ Telegram
+        </a>
 
 
       </div>
 
-    </section>
+    </div>
 
-
-
-    <!-- =========================================
-         FAQ
-    ========================================== -->
-
-    <section
-      id="faq"
-      class="faq-section"
-    >
-
-      <div class="section-heading">
-
-        <span class="section-label">
-          FAQ
-        </span>
-
-        <h2>
-          Frequently Asked Questions
-        </h2>
-
-      </div>
-
-
-      <div class="faq-container">
-
-
-        <details>
-
-          <summary>
-            Are the e-bikes free?
-          </summary>
-
-          <p>
-
-            The website states that the e-bike itself
-            is free. Applicable delivery charges may
-            apply depending on the destination.
-
-          </p>
-
-        </details>
-
-
-        <details>
-
-          <summary>
-            How much is delivery?
-          </summary>
-
-          <p>
-
-            The stated delivery range is $100–$500.
-            The exact delivery amount depends on the
-            destination and address and should be
-            confirmed before payment.
-
-          </p>
-
-        </details>
-
-
-        <details>
-
-          <summary>
-            How do I apply?
-          </summary>
-
-          <p>
-
-            Select an e-bike, complete the application
-            form, review the generated email and then
-            manually send the email application.
-
-          </p>
-
-        </details>
-
-
-        <details>
-
-          <summary>
-            Where does my application go?
-          </summary>
-
-          <p>
-
-            The email application is addressed to
-            benebikes090@gmail.com.
-
-          </p>
-
-        </details>
-
-
-        <details>
-
-          <summary>
-            Does submitting the form automatically send the email?
-          </summary>
-
-          <p>
-
-            No. The website prepares an email using your
-            email application. You must review the
-            information and press Send.
-
-          </p>
-
-        </details>
-
-
-        <details>
-
-          <summary>
-            Can I select a specific bike?
-          </summary>
-
-          <p>
-
-            Yes. The available models include Talaria,
-            Yozma, Surron, Storm Bee and Ultra Bee.
-
-          </p>
-
-        </details>
-
-
-      </div>
-
-    </section>
-
-
-
-    <!-- =========================================
-         CONTACT
-    ========================================== -->
-
-    <section
-      id="contact"
-      class="contact-section"
-    >
-
-      <div class="contact-content">
-
-        <span class="section-label">
-          CONTACT
-        </span>
-
-        <h2>
-          Have Questions?
-        </h2>
-
-        <p>
-
-          Use the available contact channels for
-          additional information.
-
-        </p>
-
-
-        <div class="contact-buttons">
-
-
-          <a
-            href="mailto:benebikes090@gmail.com"
-            class="contact-button"
-          >
-
-            <span>
-              📧
-            </span>
-
-            Email Us
-
-          </a>
-
-
-          <a
-            href="https://t.me/mrbenebike"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="contact-button"
-          >
-
-            <span>
-              ✈️
-            </span>
-
-            Telegram
-
-          </a>
-
-
-        </div>
-
-
-        <div class="contact-email">
-
-          <span>
-            Email:
-          </span>
-
-          <strong>
-            benebikes090@gmail.com
-          </strong>
-
-        </div>
-
-
-      </div>
-
-    </section>
-
-
-  </main>
-
+  </section>
 
 
   <!-- =========================================
@@ -1759,88 +822,20 @@
 
   <footer>
 
-    <div class="footer-container">
-
-
-      <div class="footer-brand">
-
-        <div class="footer-logo">
-          ⚡ BEN E-BIKES
-        </div>
-
-        <p>
-
-          Explore available electric bikes and
-          submit an application online.
-
-        </p>
-
-      </div>
-
-
-      <div class="footer-links">
-
-        <h4>
-          Quick Links
-        </h4>
-
-        <a href="#home">
-          Home
-        </a>
-
-        <a href="#bikes">
-          E-Bikes
-        </a>
-
-        <a href="#apply">
-          Apply
-        </a>
-
-        <a href="#terms">
-          Terms
-        </a>
-
-      </div>
-
-
-      <div class="footer-links">
-
-        <h4>
-          Contact
-        </h4>
-
-        <a href="mailto:benebikes090@gmail.com">
-          Email
-        </a>
-
-        <a
-          href="https://t.me/mrbenebike"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Telegram
-        </a>
-
-      </div>
-
-
+    <div class="footer-logo">
+      ⚡ MR BEN E-BIKE
     </div>
 
+    <p>
+      The e-bike is free. Applicable delivery fees are
+      confirmed based on destination.
+    </p>
 
-    <div class="footer-bottom">
-
-      <p>
-        © 2026 Ben E-Bikes. All rights reserved.
-      </p>
-
-      <p>
-        Delivery terms should be confirmed before payment.
-      </p>
-
-    </div>
+    <p class="copyright">
+      © 2026 Mr Ben E-Bike. All rights reserved.
+    </p>
 
   </footer>
-
 
 
   <!-- =========================================
@@ -1850,5 +845,4 @@
   <script src="script.js"></script>
 
 </body>
-
 </html>
