@@ -1,226 +1,133 @@
-const form = document.getElementById("bikeForm");
+document.addEventListener("DOMContentLoaded", function () {
 
-const bikeSelect = document.getElementById("bike");
+  const form = document.getElementById("bikeForm");
+  const message = document.getElementById("formMessage");
 
-const message = document.getElementById("formMessage");
-
-
-// ===============================
-// CHOOSE BIKE BUTTONS
-// ===============================
-
-const bikeButtons =
-  document.querySelectorAll(".choose-bike");
-
-bikeButtons.forEach(function (button) {
-
-  button.addEventListener("click", function () {
-
-    const selectedBike =
-      button.dataset.bike;
-
-    bikeSelect.value =
-      selectedBike;
-
-    document
-      .getElementById("apply")
-      .scrollIntoView({
-        behavior: "smooth"
-      });
-
-  });
-
-});
-
-
-// ===============================
-// APPLICATION FORM
-// ===============================
-
-form.addEventListener("submit", function (event) {
-
-  event.preventDefault();
-
-
-  const agreement =
-    document.getElementById("agreement");
-
-
-  if (!agreement.checked) {
-
-    showMessage(
-      "Please confirm that you understand the delivery-fee information.",
-      false
-    );
-
+  if (!form) {
     return;
-
   }
 
+  form.addEventListener("submit", function (event) {
 
-  const fullName =
-    document.getElementById("fullName").value.trim();
+    event.preventDefault();
 
-  const phone =
-    document.getElementById("phone").value.trim();
+    // Get form values
+    const name = document.getElementById("name").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const country = document.getElementById("country").value.trim();
+    const state = document.getElementById("state").value.trim();
+    const city = document.getElementById("city").value.trim();
+    const address = document.getElementById("address").value.trim();
+    const postal = document.getElementById("postal").value.trim();
+    const bike = document.getElementById("bike").value;
+    const notes = document.getElementById("notes").value.trim();
 
-  const email =
-    document.getElementById("email").value.trim();
+    // Check required fields
+    if (
+      !name ||
+      !phone ||
+      !email ||
+      !country ||
+      !city ||
+      !address ||
+      !bike
+    ) {
+      message.style.display = "block";
+      message.textContent = "Please complete all required fields.";
+      message.style.backgroundColor = "#fff1f2";
+      message.style.color = "#be123c";
 
-  const country =
-    document.getElementById("country").value.trim();
+      return;
+    }
 
-  const state =
-    document.getElementById("state").value.trim();
+    // Destination email
+    const recipient = "benebikes090@gmail.com";
 
-  const city =
-    document.getElementById("city").value.trim();
+    // Email subject
+    const subject = "New E-Bike Application";
 
-  const postal =
-    document.getElementById("postal").value.trim();
+    // Create email message
+    const body =
+`Hello,
 
-  const address =
-    document.getElementById("address").value.trim();
+I would like to submit an application for a free e-bike.
 
-  const bike =
-    document.getElementById("bike").value;
-
-  const notes =
-    document.getElementById("notes").value.trim();
-
-
-  if (
-    !fullName ||
-    !phone ||
-    !email ||
-    !country ||
-    !city ||
-    !address ||
-    !bike
-  ) {
-
-    showMessage(
-      "Please complete all required fields.",
-      false
-    );
-
-    return;
-
-  }
-
-
-  // ===============================
-  // CREATE EMAIL
-  // ===============================
-
-  const recipient =
-    "benebikes090@gmail.com";
-
-
-  const subject =
-    `E-Bike Application - ${bike}`;
-
-
-  const body = `
-
-E-BIKE APPLICATION
-
---------------------------------
+APPLICANT INFORMATION
 
 Full Name:
-${fullName}
+${name}
 
 Phone Number:
 ${phone}
 
-Email:
+Email Address:
 ${email}
+
+DELIVERY INFORMATION
 
 Country:
 ${country}
 
 State / Region:
-${state}
+${state || "Not provided"}
 
 City:
 ${city}
 
-Postal / ZIP Code:
-${postal}
-
-Delivery Address:
+Full Delivery Address:
 ${address}
+
+Postal / ZIP Code:
+${postal || "Not provided"}
+
+E-BIKE REQUEST
 
 Selected E-Bike:
 ${bike}
 
-Additional Information:
-${notes}
+Additional Delivery Information:
+${notes || "None provided"}
 
---------------------------------
+I understand that the e-bike is provided free of charge and that an applicable delivery fee may apply depending on the delivery location.
 
-DELIVERY INFORMATION
+Thank you.
+${name}`;
 
-The applicant understands that the e-bike
-is free and that an applicable delivery fee
-may apply depending on the delivery location.
+    /*
+     * Create Gmail compose URL.
+     * The applicant will be taken to Gmail,
+     * where they can review the email and send it.
+     */
+    const gmailURL =
+      "https://mail.google.com/mail/?view=cm&fs=1" +
+      "&to=" + encodeURIComponent(recipient) +
+      "&su=" + encodeURIComponent(subject) +
+      "&body=" + encodeURIComponent(body);
 
-The exact delivery fee should be confirmed
-before any payment is requested.
+    // Change the button/message while opening Gmail
+    const submitButton = form.querySelector(".submit-button");
 
-`;
+    if (submitButton) {
+      submitButton.textContent = "Opening Email...";
+      submitButton.disabled = true;
+    }
 
+    message.style.display = "block";
+    message.textContent =
+      "Opening your email. Please review the application and press Send.";
+    message.style.backgroundColor = "#ecfdf3";
+    message.style.color = "#087443";
 
-  // Encode the email
+    /*
+     * Open Gmail in the same tab.
+     * This makes the Submit Application button
+     * actually take the applicant to the email website.
+     */
+    setTimeout(function () {
+      window.location.href = gmailURL;
+    }, 500);
 
-  const mailto =
-    `mailto:${recipient}` +
-    `?subject=${encodeURIComponent(subject)}` +
-    `&body=${encodeURIComponent(body)}`;
-
-
-  // ===============================
-  // OPEN EMAIL
-  // ===============================
-
-  window.location.href = mailto;
-
-
-  showMessage(
-    "Your email application has been prepared. Please review the information in your email app and tap Send.",
-    true
-  );
+  });
 
 });
-
-
-// ===============================
-// MESSAGE
-// ===============================
-
-function showMessage(text, success) {
-
-  message.textContent = text;
-
-  message.style.display = "block";
-
-
-  if (success) {
-
-    message.style.background =
-      "#e8f8ed";
-
-    message.style.color =
-      "#126a35";
-
-  } else {
-
-    message.style.background =
-      "#ffe8e8";
-
-    message.style.color =
-      "#9b1717";
-
-  }
-
-}
